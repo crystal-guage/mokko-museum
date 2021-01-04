@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'logo';
+	src: url(file:///C:/Users/hideaki/Desktop/kohnoyukihiro/font/KouzanGyoushoOTF.otf);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    display: block;
+    min-width: 800px;
+    min-height: 600px;
+    font-size: 0;
+	background: #000;
+	background-image: url(https://uc90e0b33f649d39c613c4af4497.previews.dropboxusercontent.com/p/thumb/ABBnD5W0HGcDcU9UI5SjtAXklR__I7mJVBT2w4dtmC15Fot6sR9yhnbRBqSdvIRYf1grB4VoLbpUP6Q43BftjRchcaLb8uv-H4wWKwMvjLCRoVn5_z6M2jeOKyrPyYiqwLkqZnHIYhOdLT0ITzji2Ltd8H_gI4RO_hf6Lp0bdppyNtULTy7FePBWsoE-zUo2nYIhkcLuEhHU4kLLQuoYwtamuNIwSxkpjUU1gpE-dXOXOY_tcGL7dLW5GltVfPs4S8v01f7UmhkJfG_P-n_LI-MQngs4JMNOd_4-XH4-QtE-CEp-4ANbg0lGlcRc4k57V3QlghSbLfSk18QQKW3ViJAdpQ57A-qOp9UxMdfWL7Jvr4_T4q9L-jCQATCs54A0w4U/p.jpeg?fv_content=true&size_mode=5); 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* スクロールの背景の設定 */
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #1959A8;
+}
+
+.disable {
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+    -webkit-user-select: none !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.param {
+    display: none !important;
+}
+
+.main {
+    display: inline-block;
+    height: calc(100%);
+    width: 100%;
+    bottom: 0;
+    background-color: #403864;
+    overflow: auto;
+}
+
+header {
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #544;
+}
+
+.logo {
+	display: inline-block;
+	font-family: logo; /* @font-faceで定義したフォント名を指定 */
+	color: #ccc;
+	font-size: 38px;
+	margin: 8px 10px;
+}
+
+header > ul {
+	display: inline-block;
+	margin: 8px 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+header > ul > li {
+	margin: 8px 20px;
+	display: inline-block;
+	font-family: logo;
+	font-size: 18px;
+	color: #eee;
+}
