@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'logo';
+	/* src: url(file:///C:/Users/funny/OneDrive/デスクトップ/kohnoyukihiro/font/KouzanGyoushoOTF.otf); */
+	src: url('/mokko-museum/font/KouzanGyoushoOTF.otf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    display: block;
+    min-width: 800px;
+    min-height: 600px;
+    font-size: 0;
+	background: #000;
+	background-image: url(https://www.dropbox.com/s/vhmze3xgyhvweb1/%E5%86%99%E7%9C%9F%202020-12-31%2014%2050%2033.jpg?dl=0); 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* スクロールの背景の設定 */
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #1959A8;
+}
+
+.disable {
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+    -webkit-user-select: none !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.param {
+    display: none !important;
+}
+
+.main {
+    display: inline-block;
+    height: calc(100%);
+    width: 100%;
+    bottom: 0;
+    background-color: #403864;
+    overflow: auto;
+}
+
+header {
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #544;
+}
+
+.logo {
+	display: inline-block;
+	font-family: logo; /* @font-faceで定義したフォント名を指定 */
+	color: #ccc;
+	font-size: 38px;
+	margin: 8px 10px;
+}
+
+header > ul {
+	display: inline-block;
+	margin: 8px 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+header > ul > li {
+	margin: 8px 20px;
+	display: inline-block;
+	font-family: logo;
+	font-size: 18px;
+	color: #eee;
+}
