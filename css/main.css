@@ -2,8 +2,8 @@
 
 @font-face {
 	font-family: 'logo';
-	/* src: url(file:///C:/Users/funny/OneDrive/デスクトップ/kohnoyukihiro/font/KouzanGyoushoOTF.otf); */
-	src: url('/mokko-museum/font/KouzanGyoushoOTF.otf');
+	src: url(file:///C:/Users/funny/OneDrive/デスクトップ/kohnoyukihiro/font/KouzanGyoushoOTF.otf);
+	/* src: url('/mokko-museum/font/KouzanGyoushoOTF.otf'); */
 }
 
 html, body {
@@ -17,8 +17,27 @@ body {
     min-width: 800px;
     min-height: 600px;
     font-size: 0;
-	background: #000;
-	background-image: url(https://uc90e0b33f649d39c613c4af4497.previews.dropboxusercontent.com/p/thumb/ABBnD5W0HGcDcU9UI5SjtAXklR__I7mJVBT2w4dtmC15Fot6sR9yhnbRBqSdvIRYf1grB4VoLbpUP6Q43BftjRchcaLb8uv-H4wWKwMvjLCRoVn5_z6M2jeOKyrPyYiqwLkqZnHIYhOdLT0ITzji2Ltd8H_gI4RO_hf6Lp0bdppyNtULTy7FePBWsoE-zUo2nYIhkcLuEhHU4kLLQuoYwtamuNIwSxkpjUU1gpE-dXOXOY_tcGL7dLW5GltVfPs4S8v01f7UmhkJfG_P-n_LI-MQngs4JMNOd_4-XH4-QtE-CEp-4ANbg0lGlcRc4k57V3QlghSbLfSk18QQKW3ViJAdpQ57A-qOp9UxMdfWL7Jvr4_T4q9L-jCQATCs54A0w4U/p.jpeg?fv_content=true&size_mode=5); 
+    background: #000;
+}
+
+#face {
+    display: block;
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 3000ms;
+}
+
+.thema1 {
+    background-image: url(https://uc59a087270a2a6a9c5ef84a46c8.previews.dropboxusercontent.com/p/thumb/ABAJf1L07gYiuj00BxktoLg6vGriyJy42jttp7B51yLT2eAFVZz0nrtI_uVPzqrOj4gjnzYktN4ZkLcmERFAF-zh_aCm7TXzlhqInEiweb5pIh73RpDEBDmqsmkTYyVvvEuj43k8Ct9C3eBX7uVcP1QSgnzS7V8pca87xVxXo0WljIgtCwNIopgnxumZiNsvl1oztyKsGsqgG-q5v5tVAy5h5z8tj4qLlGu4Jo56IoSRYiPtaD-2P6BO7h74UddfFI5XIxsgb0BSUtN7t8xzWXzZKEGEisxUD_PP4AEDZVvQzGUoOmHc9anmhxFclDFFsiOr135VlmxEPGCmY7_47dIEUwotfL7py9ustmoekgE8g54MDMF_ODygHheUtRN_EK2tRFvv1111-QxFlJ6RkFGoyXKvIRg9z9hfYRv2jgaffw/p.jpeg?fv_content=true&size_mode=5);
+}
+.thema2 {
+    background-image: url(https://ucefeba49e1ad81995fdde8d560e.previews.dropboxusercontent.com/p/thumb/ABBuVsEbXMCU52eSK_MfWo2AsLjpO7QkmFeJzYuJjljkRWx_iqvgbMyAebW-JF-LeA4PvDwavi6Asl_XEMpK2IfOpjG1wDK4i67PNgSHGLKPfq0Et2dHYvtprnm7H-YewhsqItqrGn4mhKPknPk2PX-Nt67OWsDHDQaJwkSdrg92nNjd5Nv-O3dLDiWeDhxEEBX-iD8zO0C_rFHaA8OLOlHomfIpOrRGgrwZfIfoLWxQwKF9UVOPwfREX68oAZQIJSquzasnHe_gIP_cwjy8bPzBg6q6h4wEtR_AoSbQZvqgHIsh1kpQJ8uS0MBFcjXK46JBWNHhvd_Ugi-UsBVBk-NIYoTN1vzpzn2K7iAVn-75YXsUl3ffkCsS_fe86cUV4egppANvLjtb5V-M2Qq8zs2kSIeVeK1uaYHjlFIXvYA70g/p.jpeg?fv_content=true&size_mode=5);
+}
+.thema3 {
+    background-image: url(https://uc4d5790f8b6302bce9c3df064f8.previews.dropboxusercontent.com/p/thumb/ABAVbb0v-Ouq69we9uow4fYZc3Y0TEt7GJZRgPqSCzS-P2YiHBai6UJ8PLroqFHAr3pc61K0llPwXvoRASONGTWZOYTJlt5NB-FpxS3RCLSBIEs5NxWpoFs8mwaE3yAVD10f4YcS7Sd-hZ9e-CTTeSuTfokX0X_WO4VLagtvkgInhNi1JH53FrpkndJsEyfVPN40FO4W1JrwBa6mxIclczZ6Jddbe_Vi2LUqWNoOj_M9NfgczmHCAlXFLwZ0KuI0tfQ6TGwBQNcv6w3FWJ7jxPEmteTsEFBaXlgLqphbG_jAm1h74iFwaTgJ6FqD2ZGR-SeymnXQnYp4ktHaymFMAS9mJ5-ig8942fl4KaU3oINExK_a4EAnl1V4YqvkruJBtHqQ359K1Q-4CdW1Bcme1EM1kWlz6ketYSkOTIZsMPG49Q/p.jpeg?fv_content=true&size_mode=5);
 }
 
 ::-webkit-scrollbar {
@@ -64,10 +83,13 @@ body {
 }
 
 header {
-	display: block;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #544;
+	background-color: rgba(125, 55, 0, 0.2);
 }
 
 .logo {
@@ -75,16 +97,21 @@ header {
 	font-family: logo; /* @font-faceで定義したフォント名を指定 */
 	color: #ccc;
 	font-size: 38px;
-	margin: 8px 10px;
+    margin: 8px 10px;
+    width: 200px;
 }
+
 
 header > ul {
 	display: inline-block;
-	margin: 8px 10px;
-	background-color: rgba(255, 255, 255, 0.1);
+    margin: 8px 10px;
+    text-align: center;
+    width: calc(100% - 260px);
+	/* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 header > ul > li {
+	display: inline-block;
 	margin: 8px 20px;
 	display: inline-block;
 	font-family: logo;
