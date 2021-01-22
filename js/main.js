@@ -1,24 +1,45 @@
 
 window.onload = function () {
-    // const faceEl = document.getElementById('face');
 
-    // faceEl.addEventListener('click', function () {
-    //     faceEl.classList.toggle('thema1');
-    //     faceEl.classList.toggle('thema3');
-    // });
+    const images = document.getElementById('face').children;
+    for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hide');
+    }
+    images[0].classList.remove('hide');
 }
 
-setInterval(function () {
 
-    const faceEl = document.getElementById('face');
-    if (faceEl.classList.contains('thema1')) {
-        faceEl.classList.toggle('thema1');
-        faceEl.classList.toggle('thema2');
-    } else if (faceEl.classList.contains('thema2')) {
-        faceEl.classList.toggle('thema2');
-        faceEl.classList.toggle('thema3');
-    } else if (faceEl.classList.contains('thema3')) {
-        faceEl.classList.toggle('thema3');
-        faceEl.classList.toggle('thema1');
+var timeoutKey = null;
+
+setNextAutoChange();
+
+function changeImage() {
+
+    const images = document.getElementById('face').children;
+    const cur = getCurrentImageIndex();
+    // console.log(cur);
+    images[cur].classList.add('hide');
+    if (cur < images.length - 1) {
+        images[cur + 1].classList.remove('hide');
+    } else {
+        images[0].classList.remove('hide');
     }
-}, 7000);
+
+    setNextAutoChange();
+}
+
+function setNextAutoChange() {
+    clearTimeout(timeoutKey);
+    timeoutKey = setTimeout(() => {
+        changeImage();
+    }, 7000);
+}
+
+function getCurrentImageIndex() {
+
+    const images = document.getElementById('face').children;
+    for (let i = 0; i < images.length; i++) {
+        if (!images[i].classList.contains('hide')) return i;
+    }
+    return -1;
+}
